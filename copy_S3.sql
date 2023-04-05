@@ -1,6 +1,6 @@
-copy users from 's3://<Reemplazar_con_la_ruta_del_bucket>/tickit/allusers_pipe.txt' 
-credentials 'aws_iam_role=<Reemplazar_con_tu_iam_role_arn>' 
-delimiter '|' region '<Reemplazar_con_tu_aws_region>';
+copy users from 's3://<Reemplazar_con_la_ruta_del_bucket>/tickit/allusers_pipe.txt' #replace the name of your folder
+credentials 'aws_iam_role=<Reemplazar_con_tu_iam_role_arn>' #select ARN role , id for your role 
+delimiter '|' region '<Reemplazar_con_tu_aws_region>'; #region 
 
 copy venue from 's3://<Reemplazar_con_la_ruta_del_bucket>/tickit/venue_pipe.txt' 
 credentials 'aws_iam_role=<Reemplazar_con_tu_iam_role_arn>' 
